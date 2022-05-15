@@ -119,3 +119,16 @@ span>a {
     border:1px solid gray;
     border-radius: 8px;
 }
+.profile-card{
+    border:1px solid gray;
+    border-radius:8px;
+    
+}
+.profile-box{
+    width:fit-content;
+    position: absolute;
+    background-color: white;
+    z-index:2;
+    
+    
+}

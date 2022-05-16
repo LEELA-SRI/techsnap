@@ -19,12 +19,13 @@ body{
     cursor: pointer
 }
 
-.forum-item-box {
+/* .forum-item-box {
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-width: 150px;
+    
     overflow: hidden;
-}
+} */
+
 
 .forum-item-name {
     text-decoration: none;
@@ -45,10 +46,14 @@ span>a {
     border-radius: 100%;
 }
 
-@media (max-width: 800px) {
-    .recent-posts {
-        display: none
+@media (min-width: 768px) {
+    .forum-item>div:nth-child(2){
+        width:65%
     }
+    .forum-item>div:nth-child(3){
+        width:30%
+    }
+    
 }
 
 @media (min-width:575px) {

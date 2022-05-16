@@ -1,4 +1,6 @@
-span {
+body{
+    width:100%
+}span {
     font-size: 15px;
 }
 
@@ -8,9 +10,9 @@ span {
     color: white
 }
 
-.forum-card {
+/* .forum-card {
     border-bottom: 1px solid rgb(207, 203, 203);
-}
+} */
 
 .forum-card:hover {
     background-color: #f8f8f8;
@@ -111,7 +113,14 @@ span>a {
 .dropdown-toggle::after {
     content: none;
 }
-
+#floatingTextarea{
+    border: none;
+    overflow-y:scroll;
+    outline: none;
+    box-shadow: none;
+  
+    resize: none; /*remove the resize handle on the bottom right*/
+}
 .com-sec {
     border-left: 3px solid gray;
 }

@@ -15,7 +15,7 @@ body{
 } */
 
 .forum-card:hover {
-    background-color: #f8f8f8;
+    background-color: #ebeef3;
     cursor: pointer
 }
 
@@ -47,22 +47,21 @@ span>a {
 }
 
 
-
-@media (min-width:575px) {
-    .forum-card {
+.forum-card {
         border: 1px solid #5050da;
-        border-radius: 8px
+        border-radius: 8px;
+        border-left: 5px solid blue;
     }
-    .post-card {
-        border: 1px solid #ced4da;
-        border-radius: 5px;
-        margin-top: 10px
+    
+    @media (max-width:575px) {
+        
+        .forum-card {
+            border:none;
+            border-bottom: 1px solid rgb(207, 203, 203);
+        border-left: 5px solid blue;
+        border-radius: 0;
     }
-}
-@media (min-width:375px) and (max-width:767px){
-    .forum-card {
-        border-bottom: 1px solid rgb(207, 203, 203);
-    } 
+    
 }
 @media (min-width:375px){
     .title-sec{
@@ -79,6 +78,7 @@ span>a {
     padding-right: 15px;
 }
 
+
 .forum-items>a:hover {
     color: #ff00bb
 }
@@ -87,33 +87,20 @@ span>a {
     color: #5050da;
 }
 
-.upvote>span {
-    width: fit-content;
-    height: 25px;
-    padding: 0px 5px;
-    border: 1px solid rgb(207, 203, 203);
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
 
-.upvote>i {
-    width: fit-content;
-    height: 25px;
-    padding: 4px 5px;
-    border: 1px solid rgb(207, 203, 203);
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
 
 .upvote:hover,
 .flag:hover,
 .bookmark:hover,
-.views:hover {
+.view:hover {
     color: #5050da
 }
 
+.upvote:focus{
+ color:#ff00bb
+}
 .bookmark>i {
-    padding: 4px 5px;
+    padding: 4px 2px;
 }
 
 .dropdown-toggle::after {

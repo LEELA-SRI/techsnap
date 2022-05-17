@@ -21,10 +21,12 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script src="https://kit.fontawesome.com/752c6a857c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+    <!-- <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap"
@@ -44,7 +46,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">TechSnap Forum</a>
+        <a class="navbar-brand fs-4" href="index.html">TechSnap Forum</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -84,21 +86,14 @@
     <!-- forum item -->
     <div class="container my-4">
       <div class="row">
-        <div class="col-md-6 mb-2">
+        
           <h1 class="forem-item-name">General</h1>
           <span class="text-secondary"
             >Description: Lorem ipsum dolor, sit amet consectetur adipisicing
             elit.</span
           >
-        </div>
-        <div
-          class="col-sm-5 col-md-6 ms-auto mt-3 mt-md-1 mt-lg-1"
-          style="width: fit-content"
-        >
-          <button class="btn btn-primary search-btn">
-            <i class="fa fa-plus" aria-hidden="true"></i> New Post
-          </button>
-        </div>
+        
+       
       </div>
     </div>
     <!-- search bar -->
@@ -138,11 +133,11 @@
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i
-              class="fa fa-arrow-up fa-lg"
+              class="fa fa-arrow-up fa-lg lh-1 pt-1"
               aria-hidden="true"
-              style="padding-top: 4px"
+              
             ></i>
-            <span class="upvote pt-1 ps-1">60</span>
+            <span class="upvote ps-1 pt-1" style="padding-top:2px">60</span>
           </div>
 
           <div class="d-flex flex-column lh-2 forum-item-box">
@@ -163,8 +158,8 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?
             </div>
             <span class="text-secondary" href="">
-              <a href="" class="text-decoration-underline">Last post</a> by
-              <a href="">eren yeager</a> on <time>May 12 2022</time></span
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on <time>May 12 2022</time></span
             >
           </div>
           <div class="d-flex flex-column ms-auto align-items-end">
@@ -179,19 +174,19 @@
               </span>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li>
-                  <div class="dropdown-item views">
+                  <div class="dropdown-item view">
                     <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="">6</span>
+                    <span class="views">6</span>
                   </div>
                 </li>
                 <li>
                   <div class="dropdown-item bookmark">
-                    <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmark
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i> <span>Bookmark</span>
                   </div>
                 </li>
                 <li>
                   <div class="dropdown-item flag">
-                    <i class="fa fa-flag-o" aria-hidden="true"></i> Flag Content
+                    <i class="fa fa-flag-o" aria-hidden="true"></i> <span>Flag Content</span>
                   </div>
                 </li>
               </ul>
@@ -215,11 +210,11 @@
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i
-              class="fa fa-arrow-up fa-lg"
+              class="fa fa-arrow-up fa-lg lh-1 pt-1"
               aria-hidden="true"
-              style="padding-top: 4px"
+              
             ></i>
-            <span class="upvote pt-1 ps-1">60</span>
+            <span class="upvote ps-1" style="padding-top:2px">60</span>
           </div>
 
           <div class="d-flex flex-column lh-2 forum-item-box">
@@ -241,8 +236,8 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?
             </div>
             <span class="text-secondary" href="">
-              <a href="" class="text-decoration-underline">Last post</a> by
-              <a href="">eren yeager</a> on <time>May 12 2022</time></span
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on <time>May 12 2022</time></span
             >
           </div>
           <div class="d-flex flex-column ms-auto align-items-end">
@@ -257,21 +252,21 @@
               </span>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li>
-                  <div class="dropdown-item views">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="">6</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-item bookmark">
-                    <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmark
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-item flag">
-                    <i class="fa fa-flag-o" aria-hidden="true"></i> Flag Content
-                  </div>
-                </li>
+                    <div class="dropdown-item view">
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                      <span class="views">6</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item bookmark">
+                      <i class="fa fa-bookmark-o" aria-hidden="true"></i> <span>Bookmark</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item flag">
+                      <i class="fa fa-flag-o" aria-hidden="true"></i> <span>Flag Content</span>
+                    </div>
+                  </li>
               </ul>
             </div>
             <div class="d-flex gap-2">
@@ -294,11 +289,11 @@
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i
-              class="fa fa-arrow-up fa-lg"
+              class="fa fa-arrow-up fa-lg lh-1 pt-1"
               aria-hidden="true"
-              style="padding-top: 4px"
+              
             ></i>
-            <span class="upvote pt-1 ps-1">60</span>
+            <span class="upvote ps-1" style="padding-top:2px">60</span>
           </div>
 
           <div class="d-flex flex-column lh-2 forum-item-box">
@@ -320,8 +315,8 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?
             </div>
             <span class="text-secondary" href="">
-              <a href="" class="text-decoration-underline">Last post</a> by
-              <a href="">eren yeager</a> on <time>May 12 2022</time></span
+              Post by
+              <a href="" class="posted-by">eren yeager</a> on <time>May 12 2022</time></span
             >
           </div>
           <div class="d-flex flex-column ms-auto align-items-end">
@@ -336,21 +331,21 @@
               </span>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li>
-                  <div class="dropdown-item views">
-                    <i class="fa fa-eye" aria-hidden="true"></i>
-                    <span class="">6</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-item bookmark">
-                    <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmark
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-item flag">
-                    <i class="fa fa-flag-o" aria-hidden="true"></i> Flag Content
-                  </div>
-                </li>
+                    <div class="dropdown-item view">
+                      <i class="fa fa-eye" aria-hidden="true"></i>
+                      <span class="views">6</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item bookmark">
+                      <i class="fa fa-bookmark-o" aria-hidden="true"></i> <span>Bookmark</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item flag">
+                      <i class="fa fa-flag-o" aria-hidden="true"></i> <span>Flag Content</span>
+                    </div>
+                  </li>
               </ul>
             </div>
             <div class="d-flex gap-2">
@@ -366,6 +361,14 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- post3 ends -->
+    
+
+
+<div class="d-flex my-4 align-content-end justify-content-end">
+    <button class="btn btn-primary search-btn" title="New Post" style="border-radius:100%" >
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button></div>
+</div>
   </body>
 </html>

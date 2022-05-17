@@ -67,6 +67,11 @@ span>a {
         margin-top: 10px
     }
 }
+@media (min-width:375px) and (max-width:767px){
+    .forum-card {
+        border-bottom: 1px solid rgb(207, 203, 203);
+    } 
+}
 
 .post-card {
     border-bottom: 1px solid #ced4da;

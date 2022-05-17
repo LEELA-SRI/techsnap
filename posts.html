@@ -274,53 +274,63 @@
         <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
             <div class="d-flex flex-row forum-item gap-3">
                 <div class="d-flex flex-column">
-                    <div class="forum-item-postedby-img posted-by-img d-flex gap-1">
-                        <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
-                    </div>
+                    <i class="fa fa-arrow-up fa-lg" aria-hidden="true" style="padding-top:4px"></i>
+                    <span class="upvote pt-1 ps-1">60</span>
                 </div>
                 <div class="d-flex flex-column lh-2 forum-item-box">
-                    <span class="fw-bold text-secondary">
-                        <a class="post-title forum-item-name" href="comment.html">CNN vs RNN</a>
-                        &centerdot; on&nbsp;<time>May 12 2022</time></span>
+                    <div class="d-flex">
+                        <div class="forum-item-postedby-img posted-by-img d-flex gap-1">
+                            <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
+                        </div>
+                        <span class="fw-bold text-secondary">
+                            <a class="post-title forum-item-name" href="comment.html">CNN vs RNN</a>
+                            <span>
+                            &centerdot; on&nbsp;<time>May 12 2022</time></span></span>
+                            
+                    </div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?
+                    </div>
                     <span class="text-secondary">
                         posted by
                         <a href="">Levi Ackermann</a></span>
+                   
                 </div>
                 <div class="d-flex flex-column ms-auto align-items-end">
-                    <div class="d-flex upvote mt-auto">
+                    <!-- <div class="d-flex upvote mt-auto">
                         <span class="upvote">60</span>
                         <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    </div> -->
+                    <div class="dropdown me-1">
+                        <span class="dropdown-toggle fa fa-caret-square-o-down" type="button" id="dropdownMenu2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        </span>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li>
+                                <div class="dropdown-item views">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                    <span class="">6</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-item bookmark">
+                                    <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmark
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-item flag">
+                                    <i class="fa fa-flag-o" aria-hidden="true"></i> Flag Content
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="d-flex gap-2">
                         <div class="d-flex ">
-                            <div class="comment pe-2">
+                            <div class="comment pe-1">
                                 <span class="d-none d-md-block">18&nbsp;comments</span>
                                 <span class="fa fa-comment-o d-md-none" aria-hidden="true">&nbsp;18</span>
                             </div>
                         </div>
-                        <div class="dropdown me-1">
-                            <span class="dropdown-toggle fa fa-caret-square-o-down" type="button" id="dropdownMenu2"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            </span>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li>
-                                    <div class="dropdown-item views">
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                        <span class="">6</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dropdown-item bookmark">
-                                        <i class="fa fa-bookmark-o" aria-hidden="true"></i> Bookmark
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dropdown-item flag">
-                                        <i class="fa fa-flag-o" aria-hidden="true"></i> Flag Content
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

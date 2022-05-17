@@ -46,15 +46,7 @@ span>a {
     border-radius: 100%;
 }
 
-@media (min-width: 768px) {
-    .forum-item>div:nth-child(2){
-        width:65%
-    }
-    .forum-item>div:nth-child(3){
-        width:30%
-    }
-    
-}
+
 
 @media (min-width:575px) {
     .forum-card {
@@ -72,7 +64,11 @@ span>a {
         border-bottom: 1px solid rgb(207, 203, 203);
     } 
 }
-
+@media (min-width:375px){
+    .title-sec{
+        display:flex
+    }
+}
 .post-card {
     border-bottom: 1px solid #ced4da;
     cursor: pointer

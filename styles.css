@@ -102,6 +102,10 @@ span>a {
 .bookmark>i {
     padding: 4px 2px;
 }
+.post-title{
+    color:black;
+    text-decoration: none;
+}
 
 .dropdown-toggle::after {
     content: none;
@@ -112,7 +116,7 @@ span>a {
     outline: none;
     box-shadow: none;
   
-    resize: none; /*remove the resize handle on the bottom right*/
+    resize: none;
 }
 .com-sec {
     border-left: 3px solid gray;

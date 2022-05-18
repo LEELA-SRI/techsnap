@@ -62,30 +62,7 @@
       </div>
     
   </div>
-  <!-- search bar -->
-  <div class="container my-5 mx-auto">
-    <form class="row" action="" role="form" method="GET">
-      <div class="col-md-6">
-        <div class="mb-3" class="search-box">
-          <select name="search-box" id="" class="form-select" aria-label="Default select example">
-            <option selected>Select ...</option>
-            <option value="Everything">Everything</option>
-            <option value="Titles">Titles</option>
-            <option value="Descriptions">Descriptions</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="mb-3 d-flex">
-          <input type="text" class="form-control me-2" placeholder="Search" />
-          <button type="submit" class="btn search-btn" name="search">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-  <!-- search ends -->
+
   <!-- post starts-->
   <section class="post">
     <div class="container p-md-0">
@@ -154,33 +131,33 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                   <li>
                     <div class="dropdown-item share">
-                      <i class="fa fa-share-square-o" aria-hidden="true"></i>
-                      Share
+                      <i class="fa fa-share-square-o" aria-hidden="true"> Share</i>
+                      
                     </div>
                   </li>
                   <li>
                     <div class="dropdown-item bookmark">
-                      <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                      <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
                     </div>
                   </li>
                   <li>
                     <div class="dropdown-item flag">
-                      <i class="fa fa-flag-o" aria-hidden="true"></i>
-                      Report
+                      <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                     
                     </div>
                   </li>
                 </ul>
               </div>
               <!-- dropdown menu ends -->
               <div class="views d-none d-md-block">
-                <i class="fa fa-share-square-o" aria-hidden="true"></i> Share
+                <i class="fa fa-share-square-o" aria-hidden="true"> Share</i>
               </div>
               <div class="bookmark d-none d-md-block">
-                <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
               </div>
               <div class="flag d-none d-md-block">
-                <i class="fa fa-flag-o" aria-hidden="true"></i>
-                Report
+                <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+               
               </div>
             </div>
 
@@ -275,20 +252,19 @@
                 </li>
                 <li>
                   <div class="dropdown-item flag">
-                    <i class="fa fa-flag-o" aria-hidden="true"></i>
-                    Report
+                    <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                    
                   </div>
                 </li>
               </ul>
             </div>
             <div class="bookmark d-none d-md-block
                    ">
-              <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+              <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
             </div>
             <div class="flag d-none d-md-block
                    ">
-              <i class="fa fa-flag-o" aria-hidden="true"></i>
-              Report
+              <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
             </div>
           </div>
           <!-- reaction row ends -->
@@ -371,29 +347,25 @@
                   </span>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     <li>
-                      <div class="dropdown-item
-                            bookmark">
-                        <i class="fa
-                              fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                      <div class="dropdown-item bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
                       </div>
                     </li>
                     <li>
-                      <div class="dropdown-item
-                            flag">
-                        <i class="fa fa-flag-o" aria-hidden="true"></i>
-                        Report
+                      <div class="dropdown-item flag">
+                        <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                        
                       </div>
                     </li>
                   </ul>
                 </div>
                 <div class="bookmark d-none d-md-block
                        ">
-                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                  <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
                 </div>
                 <div class="flag d-none d-md-block
                        ">
-                  <i class="fa fa-flag-o" aria-hidden="true"></i>
-                  Report
+                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
                 </div>
               </div>
               <!-- reaction row ends -->
@@ -496,20 +468,20 @@
                 </li>
                 <li>
                   <div class="dropdown-item flag">
-                    <i class="fa fa-flag-o" aria-hidden="true"></i>
-                    Report
+                    <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                    
                   </div>
                 </li>
               </ul>
             </div>
             <div class="bookmark d-none d-md-block
                    ">
-              <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+              <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
             </div>
             <div class="flag d-none d-md-block
                    ">
-              <i class="fa fa-flag-o" aria-hidden="true"></i>
-              Report
+              <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+             
             </div>
           </div>
           <!-- reaction row ends -->
@@ -544,26 +516,8 @@
   <br><br><br>
 
 </body>
-<script>
-  const replyBtn = document.querySelectorAll('.reply')
-  const commentArea = document.querySelectorAll('.testing')
+<script src="script.js">
 
-  for (let i = 0; i < replyBtn.length; i++) {
-    replyBtn[i].addEventListener('click', function () {
-      commentArea[i].classList.toggle('d-none')
-    })
-  }
-
-  const profImg = document.querySelectorAll('.hov-elt')
-
-
-  const profBox = document.querySelectorAll('.profile-box')
-  console.log(profImg,profBox);
-  for (let i = 0; i < profImg.length; i++) {
-    profImg[i].addEventListener('click', function () {
-      profBox[i].classList.toggle('d-none')
-
-  })}
   
 </script>
 

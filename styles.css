@@ -4,8 +4,7 @@ body{
     font-size: 15px;
 }
 
-.search-btn,
-.create-post {
+.search-btn ,.create-post{
     background-color: #5050da;
     color: white
 }
@@ -139,8 +138,13 @@ span>a {
     
     
 }
-.create-post{
+.new-post{
     position: fixed;
     border-radius:100%;
     bottom: 20px;
+    background:#5050da;
+    
+}
+.new-post>a{
+    color:white
 }

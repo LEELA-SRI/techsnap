@@ -139,3 +139,8 @@ span>a {
     
     
 }
+.create-post{
+    position: fixed;
+    border-radius:100%;
+    bottom: 20px;
+}

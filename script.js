@@ -25,8 +25,21 @@ for (let i=0;i<icon.length;i++){
     })
 }
 
+// document.querySelector('.forum-items').addEventListener('click', function(){
+//   this.classList.add('bord')
+// })
 
 
-ClassicEditor.create(document.querySelector("#editor")).catch((error) => {
-    console.error(error);
-  });
+
+const follow=document.querySelector('.follow-btn')
+const following=document.querySelector('.following-btn')
+
+follow.addEventListener('click', function () {
+  following.classList.toggle('d-none')
+  follow.classList.toggle('d-none')
+})
+following.addEventListener('click', function () {
+  follow.classList.toggle('d-none')
+  following.classList.toggle('d-none')
+})
+

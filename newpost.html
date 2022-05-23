@@ -42,13 +42,18 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
-        background: rgb(251, 255, 255);
+        background: rgb(226, 236, 236);
       }
-      #new-post {
+      /* #new-post {
         max-width: 800px;
-      }
+      } */
       .ck-editor__editable {
         min-height: 200px;
+      }
+      .posted-by-img{
+        width:50px;
+        height:50px;
+        border-radius:100%
       }
     </style>
   </head>
@@ -61,7 +66,14 @@
     </nav>
 
     <div class="container" id="new-post">
-      <div class="row my-5 mx-auto">
+<div class="row my-5">
+<div class="col-2 d-none d-md-block py-3  left-sec">
+  <div class="d-flex flex-column align-items-center">
+  <img src="https://i0.wp.com/craffic.co.in/wp-content/uploads/2021/03/Attack-On-Titan-eren-yeager.jpg?resize=696%2C392&ssl=1" class="posted-by-img">
+  <div class="posted-by">Eren Yeager</div></div>
+</div>
+    
+      <div class="col-md-9 right-sec">
         <div class="col-12 my-2">
           <h1>Create Post</h1>
         </div>
@@ -87,6 +99,7 @@
           >
         </div>
       </div>
+    </div>
     </div>
 
     <script>

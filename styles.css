@@ -8,7 +8,7 @@ span {
   height:32px
 }
 .create-post {
-  background-color: #5050da;
+  background-color: #00ff00;
   color: white;
 }
 
@@ -28,6 +28,12 @@ span {
 span > a {
   color: rgb(108, 117, 125);
 }
+.new-post {
+  
+  background: #00ff00;
+ 
+}
+
 
 .forum-item-postedby-img > img {
   width: 25px;
@@ -55,9 +61,9 @@ span > a {
 }
 
 .follow,.follow:hover{
-  color:#5050da;
+  color:#00ff00;
   background: white;
-  border: 1px solid #5050da;
+  border: 1px solid #00ff00;
   font-weight: bold;
 }
 .post-card {
@@ -66,6 +72,8 @@ span > a {
 }
 
 .forum-items {
+  
+  font-size: large;
   text-decoration: none;
   margin-right: 15px;
   padding-bottom: 10px;
@@ -129,14 +137,7 @@ span > a {
   background-color: white;
   z-index: 2;
 }
-.new-post {
-  
-  background: #5050da;
-}
-.new-post i {
-  color: white !important;
-}
 
 /* .bord{
-  border-bottom: 3px solid #5050da;
+  border-bottom: 3px solid #00ff00;
 } */

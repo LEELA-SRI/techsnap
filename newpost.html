@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
-        background: rgb(226, 236, 236);
+        background: rgb(234, 236, 236);
       }
       /* #new-post {
         max-width: 800px;
@@ -70,7 +70,7 @@
 <div class="col-2 d-none d-md-block py-3  left-sec">
   <div class="d-flex flex-column align-items-center">
   <img src="https://i0.wp.com/craffic.co.in/wp-content/uploads/2021/03/Attack-On-Titan-eren-yeager.jpg?resize=696%2C392&ssl=1" class="posted-by-img">
-  <div class="posted-by">Eren Yeager</div></div>
+  <a class="posted-by fw-bold text-decoration-none">Eren Yeager</a></div>
 </div>
     
       <div class="col-md-9 right-sec">
@@ -87,6 +87,43 @@
               placeholder="post title"
             />
           </div>
+          
+            <form
+                class="row"
+                action="/search"
+                role="form"
+                method="GET"
+            >
+                <div class="col-6">
+                    <div class="mb-3" class="search-box">
+                        <select
+                            name="search-box"
+                            id=""
+                            class="form-select"
+                            aria-label="Default select example"
+                        >
+                            <option selected>Category</option>
+                            <option value="General">General</option>
+                            <option value="Getting started">Getting Started</option>
+                            <option value="Get Help">Get Help</option>
+                            <option value="Projects">Projects</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3 d-flex">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="q"
+                            placeholder="Add a tag"
+                        >
+                        
+                    </div>
+                </div>
+            </form>
+        
+        
           <div class="mb-3" id="editor" placeholder="desc"></div>
         </div>
         <div class="col-12">

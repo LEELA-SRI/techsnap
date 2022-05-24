@@ -30,15 +30,13 @@ span > a {
 }
 .new-post {
   
-  background: #00ff00;
+  background: #5050da;
  
 }
 
 
 .forum-item-postedby-img > img {
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
+  display: none;
 }
 
 .forum-card {
@@ -49,26 +47,26 @@ span > a {
 .forum-card:nth-of-type(3) {border-left: 5px solid #ff0055;}
 .forum-card:nth-of-type(4) {border-left: 5px solid #ff7b00;}
 .forum-card:nth-of-type(5) {border-left: 5px solid #be02e4;}
-@media (max-width: 575px) {
-  .forum-card {
-    margin-left: 0.2rem;
-  }
-}
-@media (min-width: 375px) {
-  .title-sec {
-    display: flex;
-  }
-}
 
 .follow,.follow:hover{
-  color:#00ff00;
+  color:#5050da;
   background: white;
-  border: 1px solid #00ff00;
+  border: 1px solid #5050da;
   font-weight: bold;
 }
-.post-card {
+.input-group{
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.filter-search,.btn{
+  border:0;
+  outline:none !important;
+  box-shadow: none !important;
+}
+.post-card ,.filter-sec{
   border-bottom: 1px solid #ced4da;
-  cursor: pointer;
+  
 }
 
 .forum-items {
@@ -92,10 +90,11 @@ span > a {
 }
 
 .fa {
-  color: #888888;
+  color: #6b6d6f;
 }
 .icon-color {
   color: black;
+ 
 }
 
 .upvote:focus {
@@ -106,6 +105,7 @@ span > a {
 }
 .post-title {
   color: black;
+  font-size: large;
   text-decoration: none;
 }
 
@@ -117,11 +117,12 @@ span > a {
   overflow-y: scroll;
   outline: none;
   box-shadow: none;
-
+  
   resize: none;
 }
 .com-sec {
-  border-left: 3px solid gray;
+  border: 1px solid #ced4da;
+  border-radius:8px
 }
 .comment-box {
   border: 1px solid gray;
@@ -141,3 +142,25 @@ span > a {
 /* .bord{
   border-bottom: 3px solid #00ff00;
 } */
+  @media (max-width: 575px) {
+    .forum-card {
+      margin-left: 0.2rem;
+    }
+    /* .com-sec{
+      border:none;
+      border-radius:0;
+      border-top:1px solid #ced4da;
+      border-bottom:1px solid #ced4da
+    } */
+  }
+  @media (min-width: 375px) {
+    .title-sec {
+      display: flex;
+    }
+    .forum-item-postedby-img > img {
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+    }
+  }

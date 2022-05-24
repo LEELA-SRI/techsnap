@@ -25,10 +25,6 @@ for (let i=0;i<icon.length;i++){
     })
 }
 
-// document.querySelector('.forum-items').addEventListener('click', function(){
-//   this.classList.add('bord')
-// })
-
 
 
 const follow=document.querySelector('.follow-btn')

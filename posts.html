@@ -115,12 +115,12 @@
               <i
                 class="fa fa-bell-o"
                 aria-hidden="true"
-                style="color: #00ff00"
+                style="color: #5050da"
               ></i
               >&nbsp;Follow</span
             >
             <span class="d-none following-btn"
-              ><i class="fa fa-bell-o fw-bold" style="color: #00ff00"></i
+              ><i class="fa fa-bell-o fw-bold" style="color:#5050da"></i
               >&nbsp;Following</span
             >
           </button>
@@ -138,6 +138,30 @@
       </div>
     </div>
 
+
+    <!-- search sec starts -->
+    <div class="container">
+    <div class="input-group mb-5 align-items-center">
+      <i class="fa fa-search fa-lg mx-2" style="color:black"></i>
+      <input type="text" class="filter-search form-control">
+      <button class="btn dropdown-toggle ms-auto" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filters</button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#">filter 1</a></li>
+        <li><a class="dropdown-item" href="#">filter 2</a></li>
+        <li><a class="dropdown-item" href="#">filter 3</a></li>
+      </ul>
+    </div></div>
+<!-- search sec ends -->
+
+<!-- filter section starts-->
+<div class="container">
+  <div class="d-flex gap-3 filter-sec mb-4">
+    <button class="btn" onclick="filter('all')">All</button>
+    <button class="btn" onclick="filter('owned')">Owned</button>
+    <button class="btn" onclick="filter('bookmarked')">Bookmarked</button>
+
+  </div>
+</div>
     <!-- post section starts -->
 
     <div class="container">
@@ -378,7 +402,7 @@
       <!-- post3 ends -->
 
       <!-- post4 starts -->
-      <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
+      <div class="row mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
@@ -459,7 +483,7 @@
       <!-- post4 ends -->
 
       <!-- post5 starts -->
-      <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
+      <div class="row mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
@@ -538,7 +562,7 @@
       <!-- post5 ends -->
 
       <!-- post6 starts -->
-      <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
+      <div class="row mt-2 my-md-3 py-3 mx-auto post-card owned">
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
@@ -620,7 +644,7 @@
       <!-- post6 ends -->
 
       <!-- post7 starts -->
-      <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
+      <div class="row mt-2 my-md-3 py-3 mx-auto post-card owned">
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>
@@ -702,7 +726,7 @@
       <!-- post7 ends -->
 
       <!-- post8 starts -->
-      <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
+      <div class="row mt-2 my-md-3 py-3 mx-auto post-card bookmarked">
         <div class="d-flex flex-row forum-item gap-3">
           <div class="d-flex flex-column">
             <i class="fa fa-arrow-up fa-lg lh-1 pt-1" aria-hidden="true"></i>

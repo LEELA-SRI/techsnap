@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
 </head>
 
 <body>
@@ -44,12 +45,12 @@
   <!-- navbar ends -->
   <div class="container my-3">
     <div class="row">
-      <div class="forum-items">
-        <a href="posts.html">General</a>
-        <a href="posts.html">Getting&nbsp;started</a>
-        <a href="posts.html">Get&nbsp;help</a>
-        <a href="posts.html">Projects</a>
-        <a href="posts.html">Product&nbsp;Feedback</a>
+      <div >
+        <a href="posts.html" class="forum-items">General</a>
+        <a href="posts.html" class="forum-items">Getting&nbsp;started</a>
+        <a href="posts.html" class="forum-items">Get&nbsp;help</a>
+        <a href="posts.html" class="forum-items">Projects</a>
+        <a href="posts.html" class="forum-items">Product&nbsp;Feedback</a>
       </div>
     </div>
   </div>
@@ -57,7 +58,7 @@
   <div class="container my-4">
     
       <div class="forum-item-name">
-        <h1 class="mb-0">General</h1>
+        <h2 class="mb-0">General</h2>
 
       </div>
     
@@ -162,7 +163,7 @@
             </div>
 
           </div>
-          <div class="follow">
+          <div class="follow-post">
 
             <span class="fa fa-bell-o" aria-hidden="true"></span>
           </div>
@@ -173,8 +174,8 @@
   </section>
 
   <section id="comment-sec">
-    <div class="container">
-      <div class="d-flex mt-4 gap-2 d-none testing">
+    <div class="container p-md-0">
+      <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
         <div class="forum-item-postedby-img posted-by-img">
           <i class="fa fa-user"></i></div>
         <div class="post-comment" style="width:100% ;">
@@ -187,234 +188,24 @@
       </div>
       <!-- comment section -->
       <!-- comment thread starts -->
-      <div class="d-flex flex-column mt-4 mx-auto comment-card">
-        <div class="d-flex gap-1">
+      
+
+      <!-- 2nd comment starts -->
+      <div class="d-flex  mt-4 p-2 p-md-3 mx-auto comment-card">
+        <div class="d-flex">
           <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
             <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
           </div>
-          <div class="posted-by">
-            <span class=" fw-bold">Levi
-              Ackermann &centerdot;
-              <time class="posted-on fw-bold text-secondary">May&nbsp;12&nbsp;2022</time></span>
-          </div>
+          
 
         </div>
         <!-- com-sec starts -->
-        <div class="row d-flex ps-2 ms-2 mt-1 com-sec">
-          <!-- comment row starts -->
-          <!-- profile card -->
-          <div class="container profile-box d-none ms-1 p-0">
-            <div class="d-flex gap-2 profile-card p-2 pe-3">
-              <div class="forum-item-postedby-img posted-by-img">
-                <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
-              </div>
-              <div class="d-flex flex-column">
-                <div class="d-flex flex-column">
-                  <div class="posted-by"><span>Levi Ackermann</span></div>
-                  <div class="role mt-3">author</div>
-                </div>
-                <div class="d-flex gap-3 mt-0">
-                  <div class="posts">posts : <span>8</span></div>
-                  <div class="points">points : <span>8</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- profile card ends -->
-          <div class="comment">
-            Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Temporibus eius iure iste
-            quibusdam
-            possimus velit.
-          </div>
-          <!-- comment row ends -->
-          <!-- reactions row starts -->
-          <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                align-items-center">
-            <div class="d-flex">
-              <span class="upvote fa fa-arrow-up"> 60</span>
-            </div>
-            <div class="reply">
-              <span class="fa fa-comment-o">
-                Reply</span>
-            </div>
-
-            <div class="dropdown pe-1 d-md-none">
-              <span class="dropdown-toggle fa
-                    fa-caret-down " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                aria-expanded="false">
-              </span>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li>
-                  <div class="dropdown-item bookmark">
-                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
-                  </div>
-                </li>
-                <li>
-                  <div class="dropdown-item flag">
-                    <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-                    
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="bookmark d-none d-md-block
-                   ">
-              <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-            </div>
-            <div class="flag d-none d-md-block
-                   ">
-              <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-            </div>
-          </div>
-          <!-- reaction row ends -->
-          <!-- commenting on the comment -->
-          <div class="d-flex mt-4 gap-2 d-none testing">
-            <div class="forum-item-postedby-img
-                  posted-by-img">
-                  <i class="fa fa-user"></i></div>
-            <div class="post-comment" style="width:100% ;">
-              <div class="d-flex flex-column comment-box">
-                <textarea class="form-control"  placeholder="kindly login to comment or like" id="floatingTextarea"></textarea>
-                <button class="d-inline btn btn-primary m-3
-                      me-2 mb-2 py-1 align-self-end
-                      submit-comment" style="width:fit-content">Reply</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2nd thread in the commentstarts as another row after reactionsrow -->
-          <div class="d-flex flex-column mt-4 mx-auto
-                comment-card">
-            <div class="d-flex gap-1">
-              <div class="forum-item-postedby-img
-                    posted-by-img hov-elt" title="click-me">
-                <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
-              </div>
-              <div class="posted-by">
-                <span class="fw-bold">Levi
-                  Ackermann &centerdot;
-                  <time class="posted-on fw-bold text-secondary">May&nbsp;12&nbsp;2022</time></span>
-              </div>
-
-            </div>
-            <!-- com-sec starts -->
-            <div class="row d-flex ps-2 ms-2 mt-1 com-sec">
-              <!-- comment row starts -->
-
-              <!-- profile card -->
-          <div class="container profile-box d-none ms-1 p-0">
-            <div class="d-flex gap-2 profile-card p-2 pe-3">
-              <div class="forum-item-postedby-img posted-by-img">
-                <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
-              </div>
-              <div class="d-flex flex-column">
-                <div class="d-flex flex-column">
-                  <div class="posted-by"><span>Levi Ackermann</span></div>
-                  <div class="role mt-3">author</div>
-                </div>
-                <div class="d-flex gap-3 mt-0">
-                  <div class="posts">posts : <span>8</span></div>
-                  <div class="points">points : <span>8</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- profile card ends -->
-              <div class="comment">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Temporibus eius iure
-                iste
-                quibusdam possimus velit.
-              </div>
-              <!-- comment row ends -->
-              <!-- reactions row starts -->
-              <div class="d-flex ms-2 mt-2 ps-0 gap-3
-                    align-items-center">
-                <div class="d-flex  ">
-                  <span class="upvote fa fa-arrow-up">
-                    60</span>
-
-                </div>
-                <div class="reply">
-                  <span class="fa fa-comment-o
-                         "> Reply</span>
-                </div>
-                <div class="dropdown pe-1 d-md-none">
-                  <span class="dropdown-toggle fa
-                        fa-caret-down  " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                  </span>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <li>
-                      <div class="dropdown-item bookmark">
-                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown-item flag">
-                        <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-                        
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="bookmark d-none d-md-block
-                       ">
-                  <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
-                </div>
-                <div class="flag d-none d-md-block
-                       ">
-                  <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
-                </div>
-              </div>
-              <!-- reaction row ends -->
-              <div class="d-flex mt-4 gap-2 d-none testing">
-                <div class="forum-item-postedby-img
-                      posted-by-img">
-                      <i class="fa fa-user"></i>  </div>
-                <div class="post-comment" style="width:100%
-                      ;">
-                  <div class="d-flex flex-column
-                        comment-box">
-                    <textarea class="form-control"  placeholder="kindly login to comment or like" id="floatingTextarea"></textarea>
-                    <button class="d-inline btn
-                          btn-primary m-3 me-2 mb-2
-                          py-1 align-self-end
-                          submit-comment" style="width:fit-content">Reply</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- com-sec ends -->
-          </div>
-          <!-- comment thread ends -->
-
-          <!-- 2nd thread comment ends -->
-
-
-
-
-        </div>
-        <!-- com-sec ends -->
-      </div>
-      <!-- comment thread ends -->
-
-      <!-- 2nd comment starts -->
-      <div class="d-flex flex-column mt-4 mx-auto comment-card">
-        <div class="d-flex gap-1">
-          <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
-            <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
-          </div>
+        <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
           <div class="posted-by">
             <span class="fw-bold">Levi
               Ackermann &centerdot;
               <time class="posted-on fw-bold text-secondary">May&nbsp;12&nbsp;2022</time></span>
           </div>
-
-        </div>
-        <!-- com-sec starts -->
-        <div class="row d-flex ps-2 ms-2 mt-1 com-sec">
           <!-- comment row starts -->
 
           <!-- profile card -->
@@ -485,10 +276,115 @@
             </div>
           </div>
           <!-- reaction row ends -->
-          <div class="d-flex mt-4 gap-2 d-none testing">
+          <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
             <div class="forum-item-postedby-img
                   posted-by-img">
-                  <i class="fa fa-user"></i></div>
+                  <i class="fa fa-user"></i>
+                </div>
+            <div class="post-comment" style="width:100%
+                  ;">
+              <div class="d-flex flex-column
+                    comment-box">
+                <textarea class="form-control"  placeholder="kindly login to comment or like" id="floatingTextarea"></textarea>
+                <button class="d-inline btn
+                      btn-primary m-3 me-2 mb-2
+                      py-1 align-self-end
+                      submit-comment" style="width:fit-content">Reply</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- thread in 2nd comment starts -->
+      <div class="d-flex  mt-4 p-2 p-md-3 mx-auto comment-card">
+        <div class="d-flex">
+          <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+            <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
+          </div>
+          
+
+        </div>
+        <!-- com-sec starts -->
+        <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
+          <div class="posted-by">
+            <span class="fw-bold">Levi
+              Ackermann &centerdot;
+              <time class="posted-on fw-bold text-secondary">May&nbsp;12&nbsp;2022</time></span>
+          </div>
+          <!-- comment row starts -->
+
+          <!-- profile card -->
+          <div class="container profile-box d-none ms-1 p-0">
+            <div class="d-flex gap-2 profile-card p-2 pe-3">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex flex-column">
+                  <div class="posted-by"><span>Levi Ackermann</span></div>
+                  <div class="role mt-3">author</div>
+                </div>
+                <div class="d-flex gap-3 mt-0">
+                  <div class="posts">posts : <span>8</span></div>
+                  <div class="points">points : <span>8</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- profile card ends -->
+
+          <div class="comment">
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Temporibus eius iure iste
+            quibusdam
+            possimus velit.
+          </div>
+          <!-- comment row ends -->
+          <!-- reactions row starts -->
+          <div class="d-flex ms-2 mt-2 ps-0 gap-3
+                align-items-center">
+            <div class="d-flex  ">
+              <span class="upvote fa fa-arrow-up"> 60</span>
+            </div>
+            <div class="reply">
+              <span class="fa fa-comment-o  ">
+                Reply</span>
+            </div>
+
+            <div class="dropdown pe-1 d-md-none">
+              <span class="dropdown-toggle fa
+                    fa-caret-down  " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                    
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bookmark d-none d-md-block
+                   ">
+              <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+            </div>
+            <div class="flag d-none d-md-block
+                   ">
+              <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+             
+            </div>
+          </div>
+          <!-- reaction row ends -->
+          <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+            <div class="forum-item-postedby-img
+                  posted-by-img">
+                  <i class="fa fa-user"></i>
+                </div>
             <div class="post-comment" style="width:100%
                   ;">
               <div class="d-flex flex-column
@@ -506,7 +402,131 @@
       </div>
       <!-- comment thread ends -->
 
+      <!-- thread in 2nd comment ends -->
+        </div>
+        <!-- com-sec ends -->
+        
+      </div>
+      <!-- comment thread ends -->
+
       <!-- 2nd comment ends -->
+
+
+
+
+
+      <!-- 3rd comment starts -->
+      <div class="d-flex  mt-4 p-2 p-md-3 mx-auto comment-card">
+        <div class="d-flex">
+          <div class="forum-item-postedby-img posted-by-img hov-elt" title="click-me">
+            <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
+          </div>
+          
+
+        </div>
+        <!-- com-sec starts -->
+        <div class="row d-flex  mx-1 p-1 mb-1 com-sec">
+          <div class="posted-by">
+            <span class="fw-bold">Levi
+              Ackermann &centerdot;
+              <time class="posted-on fw-bold text-secondary">May&nbsp;12&nbsp;2022</time></span>
+          </div>
+          <!-- comment row starts -->
+
+          <!-- profile card -->
+          <div class="container profile-box d-none ms-1 p-0">
+            <div class="d-flex gap-2 profile-card p-2 pe-3">
+              <div class="forum-item-postedby-img posted-by-img">
+                <img src="https://storage.googleapis.com/kaggle-avatars/images/195039-fb.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex flex-column">
+                  <div class="posted-by"><span>Levi Ackermann</span></div>
+                  <div class="role mt-3">author</div>
+                </div>
+                <div class="d-flex gap-3 mt-0">
+                  <div class="posts">posts : <span>8</span></div>
+                  <div class="points">points : <span>8</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- profile card ends -->
+
+          <div class="comment">
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Temporibus eius iure iste
+            quibusdam
+            possimus velit.
+          </div>
+          <!-- comment row ends -->
+          <!-- reactions row starts -->
+          <div class="d-flex ms-2 mt-2 ps-0 gap-3
+                align-items-center">
+            <div class="d-flex  ">
+              <span class="upvote fa fa-arrow-up"> 60</span>
+            </div>
+            <div class="reply">
+              <span class="fa fa-comment-o  ">
+                Reply</span>
+            </div>
+
+            <div class="dropdown pe-1 d-md-none">
+              <span class="dropdown-toggle fa
+                    fa-caret-down  " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+              </span>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <div class="dropdown-item bookmark">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>Bookmark
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-item flag">
+                    <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+                    
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="bookmark d-none d-md-block
+                   ">
+              <i class="fa fa-bookmark-o" aria-hidden="true"> Bookmark</i>
+            </div>
+            <div class="flag d-none d-md-block
+                   ">
+              <i class="fa fa-flag-o" aria-hidden="true"> Report</i>
+             
+            </div>
+          </div>
+          <!-- reaction row ends -->
+          <div class="d-flex mt-4 mb-3 gap-2 d-none testing">
+            <div class="forum-item-postedby-img
+                  posted-by-img">
+                  <i class="fa fa-user"></i>
+                </div>
+            <div class="post-comment" style="width:100%
+                  ;">
+              <div class="d-flex flex-column
+                    comment-box">
+                <textarea class="form-control"  placeholder="kindly login to comment or like" id="floatingTextarea"></textarea>
+                <button class="d-inline btn
+                      btn-primary m-3 me-2 mb-2
+                      py-1 align-self-end
+                      submit-comment" style="width:fit-content">Reply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- com-sec ends -->
+      </div>
+      <!-- comment thread ends -->
+
+      
+      <!-- 3rd comment ends -->
+
+
     </div>
   </section>
  

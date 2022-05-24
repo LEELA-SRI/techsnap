@@ -28,12 +28,7 @@
       height: 45px;
       border-radius: 100%;
     }
-    body{
-      background:rgb(248, 251, 251)
-    }
-    section{
-      background:white
-    }
+    
   }
   </style>
 </head>
@@ -60,9 +55,20 @@
     </div>
   </nav>
   <!-- navbar ends -->
-  <div class="container my-3">
+  <!-- <div class="container my-3">
     <div class="row">
-      <div >
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link forum-items" href="posts.html">General</a></li>
+        <li class="page-item"><a class="page-link forum-items" href="posts.html">Getting&nbsp;started</a></li>
+        <li class="page-item"><a class="page-link forum-items" href="posts.html">Get&nbsp;help</a></li>
+        <li class="page-item"><a class="page-link forum-items" href="posts.html">Projects</a></li>
+        <li class="page-item"><a class="page-link forum-items" href="posts.html">Product&nbsp;Feedback</a></li>
+      </ul>
+    </div>
+  </div> -->
+  <!-- <div class="container my-3">
+    <div class="row">
+      <div class="">
         <a href="posts.html" class="forum-items">General</a>
         <a href="posts.html" class="forum-items">Getting&nbsp;started</a>
         <a href="posts.html" class="forum-items">Get&nbsp;help</a>
@@ -70,21 +76,56 @@
         <a href="posts.html" class="forum-items">Product&nbsp;Feedback</a>
       </div>
     </div>
+  </div> -->
+
+  <div class="container mt-3">
+     <div class="row">
+    <div class="col-sm-4 col-md-3 col-lg-2" class="search-box">
+      <select
+          name="search-box"
+          id=""
+          class="form-select"
+          aria-label="Default select example"
+      >
+          
+          <a href="posts.html" class="forum-items"><option selected value="General">General</a></option>
+          <option value="Getting started"><a href="posts.html" class="forum-items">Getting&nbsp;started</a></option>
+          <option value="Get Help"><a href="posts.html" class="forum-items">Get&nbsp;help</a></option>
+          <option value="Projects"><a href="posts.html" class="forum-items">Projects</a></option>
+      </select>
   </div>
+  
+  </div>
+</div>
+
 
   
   <!-- post starts-->
   <section class="post">
     <div class="container p-md-0">
       <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
-        <div class="row my-4">
-          
-          <a class="post-title fw-bold fs-4" href="comment.html">CNN
-            vs RNN</a>
-            <a href="" class="text-decoration-none ">#General</a>
+        <div class="d-flex my-4">
+          <div class="d-flex flex-column">
+          <div class="post-title fw-bold fs-4">CNN
+            vs RNN</div>
+            <a href="posts.html" class="text-decoration-none ">#General</a>
+          </div>
+          <button class="btn follow ms-auto" title="follow" style="height: fit-content;color:black">
+            <span class="follow-btn">
+              <i
+                class="fa fa-bell-o"
+                aria-hidden="true"
+                style="color:black"
+              ></i
+              ></span
+            >
+            <span class="d-none following-btn" style="color:blue"
+              ><i class="fa fa-bell-o fw-bold" style="color:blue"></i
+              >&nbsp;Following</span
+            >
+          </button>
           
         </div>
-        
         <div class="d-flex flex-row forum-item gap-3">
           
           <div class="d-flex flex-column">
@@ -180,10 +221,7 @@
             </div>
 
           </div>
-          <div class="follow-post">
-
-            <span class="fa fa-bell-o" aria-hidden="true"></span>
-          </div>
+          
 
 
         </div>

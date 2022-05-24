@@ -59,7 +59,7 @@ span > a {
   border-radius: 8px;
   box-shadow: none;
 }
-.filter-search,.btn{
+.filter-search,.btn,.btn:hover{
   border:0;
   outline:none !important;
   box-shadow: none !important;

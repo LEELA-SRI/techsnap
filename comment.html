@@ -19,6 +19,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
+  <style>
+      @media (min-width: 375px) {
+  
+    .forum-item-postedby-img > img {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+    }
+    body{
+      background:rgb(248, 251, 251)
+    }
+    section{
+      background:white
+    }
+  }
+  </style>
 </head>
 
 <body>
@@ -55,20 +72,21 @@
     </div>
   </div>
 
-  <div class="container my-4">
-    
-      <div class="forum-item-name">
-        <h2 class="mb-0">General</h2>
-
-      </div>
-    
-  </div>
-
+  
   <!-- post starts-->
   <section class="post">
     <div class="container p-md-0">
       <div class="row mt-2 my-md-3 py-3 mx-auto post-card">
+        <div class="row my-4">
+          
+          <a class="post-title fw-bold fs-4" href="comment.html">CNN
+            vs RNN</a>
+            <a href="" class="text-decoration-none ">#General</a>
+          
+        </div>
+        
         <div class="d-flex flex-row forum-item gap-3">
+          
           <div class="d-flex flex-column">
             <div class="forum-item-postedby-img posted-by-img hov-elt 
                 d-flex gap-1" title="click-me">
@@ -96,14 +114,13 @@
           </div>
           <div class="d-flex flex-column">
             <div class="d-flex flex-column lh-2">
-              <span class="fw-bold text-secondary">
-                <a class="post-title" href="comment.html">CNN
-                  vs RNN</a>
-                &centerdot; <span class="text-secondary">
-                  posted&nbsp;by
-                  <a href="" class="posted-by">Levi
-                    Ackermann</a></span> &centerdot;
-                <time class="posted-on">May&nbsp;12&nbsp;2022</time></span>
+              <div class=" ">
+                
+                
+                 
+                  <a href="" class="fw-bold posted-by text-decoration-none text-black">Levi
+                    Ackermann</a> &centerdot;
+                <time class="posted-on text-secondary">2 days ago</time></div>
                 
               <p class="post-description">
                 Lorem ipsum dolor sit amet consectetur
